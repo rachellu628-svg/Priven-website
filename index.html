@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Priven — Proven by Quality. Driven by Data.</title>
+<link rel="icon" href="assets/icon-priven.svg" type="image/svg+xml">
 <style>
 @font-face {
   font-family: 'Syne';
@@ -72,11 +73,11 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800; font-size: 20px;
-  background: var(--grad);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  display: flex; align-items: center;
+  text-decoration: none;
+  line-height: 0;
 }
+.nav-logo img { height: 26px; width: auto; display: block; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a {
   color: var(--text2); text-decoration: none;
@@ -449,7 +450,7 @@ footer {
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Priven</div>
+  <a href="/" class="nav-logo"><img src="assets/logo-priven.svg" alt="Priven"></a>
   <ul class="nav-links">
     <li><a href="#dsp">For DSPs</a></li>
     <li><a href="#publishers">For Publishers</a></li>
